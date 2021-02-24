@@ -56,3 +56,6 @@ $route['translate_uri_dashes'] = FALSE;
 // PROGRAMADORES
 $route['programadores']         = 'ProgrammersController';
 $route['programadores/crear']   = 'ProgrammersController/createProgrammer';
+
+// EJERCICIO LÓGICO
+$route['ejercicio3']            = 'TestingController/doLogicalExercise';

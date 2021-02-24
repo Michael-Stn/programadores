@@ -90,5 +90,5 @@ define("PORT",                 (isset($SERVER["SERVER_PORT"]) && !in_array($SERV
 define("SERVER",               PROTOCOL.DOMAIN.PORT);
 define("BASE_URL",             SERVER.'/pruebaIngreso/');
 
-// TABLAS
+// TABLAS DB
 define("T_PROGRAMMERS",               'programador');

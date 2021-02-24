@@ -14,13 +14,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <div class="container">
             <form id="createProgrammersForm">
-                <h3 class="my-3 text-center">Creación de nuevo programador</h3>
-                
+                <h3 class="my-3 text-center">Crear programador</h3>
+
                 <!-- Alertas -->
                 <div id="successMessage" class="alert alert-success" role="alert"></div>
                 <div id="errorMessage" class="alert alert-danger" role="alert"></div>
                 <div id="infoMessage" class="alert alert-primary" role="alert"></div>
-                
+
                 <!-- Nombres y apellidos -->
                 <div class="form-row">
                     <div class="form-group col-md-6">

@@ -1,13 +1,31 @@
 <?php
 
+/**
+ * Modelo lógico para programadores
+ * @author Michael Avila <mstavila99@gmail.com>
+ * @date 24/02/2021
+ * @package application/models/business
+ */
 class logProgrammers extends CI_Model {
 
     public function __construct() {
         parent::__construct();
-
         $this->load->model('persistence/dbProgrammers', 'dbProgrammers');
     }
 
+    /**
+     * Crear un programador
+     * @author Michael Avila <mstavila99@gmail.com>
+     * @date 24/02/2021 
+     * @param array $postData Datos del formulario
+     *      {string} name Nombres
+     *      {string} lastName Apellidos
+     *      {string} document Número de cédula
+     *      {string} email Correo electrónico
+     *      {string} language Lenguajes que maneja
+     * @return array Respuesta para JSON (status|message|totalProgrammers)
+     * @throws Exception
+     */
     public function createProgrammerLog($postData) {
         // Validar el envío de los parámetros necesarios
         if (!isset($postData['name']) || !$postData['name']) {throw new Exception('No se ha especificado el nombre');}

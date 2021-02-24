@@ -53,5 +53,6 @@ $route['default_controller'] = 'ProgrammersController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+// PROGRAMADORES
 $route['programadores']         = 'ProgrammersController';
 $route['programadores/crear']   = 'ProgrammersController/createProgrammer';
